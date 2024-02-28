@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Página web que ayuda a organizar tus tareas de forma sencilla y eficiente.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de tareas</title>
+  <link rel="icon" type="image/svg+xml" href="assets/icons/todo-list.svg">
+  <link rel="stylesheet" href="src/styles/index.css">
+  <link rel="stylesheet" href="src/styles/theme.css">
+</head>
+<body>
+  <header class="header">
+    <div class="theme-switcher" id="theme-switcher">
+      <button class="theme-switcher__btn" id="sunIcon">🌞</button>
+      <button class="theme-switcher__btn theme-switcher__btn--hidden" id="moonIcon">🌚</button>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="tasks">
+      <h1 class="tasks__title">Tareas Pendientes</h1>
+
+      <div class="tasks__generator">
+        <input type="text" class="tasks__textfield" id="tasks__textfield">
+        <button type="button" class="tasks__create" id="tasks__create">Crear</button>
+      </div>
+
+      <ol class="tasks__list" id="tasks__list">
+        <!-- Tareas generadas dinámicamente mediante JavaScript -->
+      </ol>
+    </section>
+  </main>
+
+  <script src="src/scripts/index.js"></script>
+  <script src="src/scripts/theme.js"></script>
+</body>
+</html>

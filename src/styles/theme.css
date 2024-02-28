@@ -1,0 +1,99 @@
+:root{
+  /* Common theme */
+  --brd-theme-switcher__btn: 1px solid hsl(204, 100%, 50%);
+  --shadow-tasks: 2px 2px 20px hsla(0, 0%, 0%, 0.062);
+  --shadow-tasks__textfield: 2px 2px 20px hsla(204, 51%, 38%, 0.38);
+  --color-tasks__create: hsl(0, 0%, 100%);
+  --color-tasks__item: hsl(0, 0%, 90%);
+
+  /* Light theme */
+  --light-bg-document: hsl(214, 26%, 95%);
+  --light-bg-tasks: hsl(214, 10%, 86%);
+  --light-color-tasks__title: hsl(205, 30%, 22%);
+  --light-bg-tasks__textfield: hsl(214, 26%, 95%);
+  --light-bg-tasks__create: hsl(204, 100%, 50%);
+  --light-bg-tasks__item: hsl(248, 100%, 70%);
+
+  /* Dark theme */
+  --dark-bg-document: hsl(205, 33%, 10%);
+  --dark-bg-tasks: hsl(205, 64%, 11%);
+  --dark-color-tasks__title: hsl(0, 0%, 98%);
+  --dark-bg-tasks__textfield: hsl(214, 26%, 85%);
+  --dark-bg-tasks__create: hsla(205, 96%, 43%, 0.8);
+  --dark-bg-tasks__item: hsl(207, 58%, 19%);
+}
+
+/* Common theme */
+.theme-switcher__btn:hover{
+  border: var(--brd-theme-switcher__btn);
+}
+
+.tasks{
+  box-shadow: var(--shadow-tasks);
+}
+
+.tasks__textfield:focus{
+  box-shadow: var(--shadow-tasks__textfield)
+}
+
+.tasks__create{
+  color: var(--color-tasks__create);
+  font-weight: 600;
+}
+
+.tasks__item{
+  color: var(--color-tasks__item);
+  font-weight: 500;
+}
+
+
+/* Light theme */
+body{
+  background-color: var(--light-bg-document);
+}
+
+.tasks{
+  background-color: var(--light-bg-tasks);
+}
+
+.tasks__title{
+  color: var(--light-color-tasks__title);
+}
+
+.tasks__textfield{
+  background-color: var(--light-bg-tasks__textfield);
+}
+
+.tasks__create{
+  background-color: var(--light-bg-tasks__create);
+}
+
+.tasks__item{
+  background-color: var(--light-bg-tasks__item);
+}
+
+
+/* Dark theme */
+.dark{
+  background-color: var(--dark-bg-document);
+}
+
+.dark .tasks{
+  background-color: var(--dark-bg-tasks);
+}
+
+.dark .tasks__title{
+  color: var(--dark-color-tasks__title);
+}
+
+.dark .tasks__textfield{
+  background-color: var(--dark-bg-tasks__textfield);
+}
+
+.dark .tasks__create{
+  background-color: var(--dark-bg-tasks__create);
+}
+
+.dark .tasks__item{
+  background-color: var(--dark-bg-tasks__item);
+}
